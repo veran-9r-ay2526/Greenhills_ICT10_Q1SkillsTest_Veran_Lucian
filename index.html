@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Skills Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+   <div class="main">
+    <fieldset style="background-color: #fbe9dd;">
+      <h1 style="color: #232020;">Ethan and Mark's Cafe!</h1>
+      <h3 style="color: #232020;">Welcome to your second home! Make yourself comfortable while we make your coffee!</h3>
+      <fieldset>
+        <label><input type="checkbox" id="usa" value="120"> Americano (₱120)</label><br>
+        <label><input type="checkbox" id="jelly" value="100"> Coffee Jelly (₱100)</label><br>
+        <label><input type="checkbox" id="cm" value="210"> Caramel Macchiato (₱210)</label><br>
+        <label><input type="checkbox" id="affogato" value="230"> Affogato (₱230)</label><br>
+        <label><input type="checkbox" id="cold" value="170"> Cold Brew (₱170)</label><br>
+        <label><input type="checkbox" id="mocha" value="150"> Mocha (₱150)</label><br>
+        <input type="button" py-click="get_receipt" value="Get receipt">
+      </fieldset>
+      <fieldset>
+        <legend>===Receipt===</legend>
+        <div id="receipt"></div>
+      </fieldset>
+    </fieldset>
+
+        <audio controls autoplay loop>
+            <source src="sugartapes.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
